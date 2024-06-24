@@ -17,8 +17,11 @@ body {
 
     gap: 24px;
 
-/*     row-gap: 50px; */
- /*    column-gap: 10px; */
+    grid-auto-flow: row; /* Es el valor por default */
+    /*grid-auto-flow: column; Este valor cambia el flujo a columnas */
+    
+    /* Esto no es de grid pero funciona para combinar la dirección*/
+    direction: rtl; /* Rigth to left */
 
     width: 500px;
     height: 500px;
@@ -39,8 +42,16 @@ body {
 }
 
 .item4 {
-    background-color: darkcyan;
+    background-color: darkmagenta;
 }
 .item5 {
     background-color: lightgreen;
+}
+
+.container div {
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
