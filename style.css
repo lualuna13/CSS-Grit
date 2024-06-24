@@ -12,13 +12,13 @@ body {
 /* Container tenga una grilla 5 columnas * 5 filas del mismo ancho y alto */
 .container {
     display: grid;
-    grid-template-columns: repeat(3, 100px);
-    grid-template-rows: repeat(3, 100px);
-    grid-template-areas:   
-    "header header header"
-    "main    main  sidebar"
-    "footer footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
+    gap: 24px;
+
+/*     row-gap: 50px; */
+ /*    column-gap: 10px; */
 
     width: 500px;
     height: 500px;
@@ -26,22 +26,21 @@ body {
     background-color: rgb(8, 108, 155)
 }
 
-.header {
-    grid-area: header;
-    background-color: rgb(252, 189, 107);
+.item1 {
+    background-color: aqua;
 }
 
-.main {
-    grid-area: main;
-    background-color: rgb(192, 143, 238);
+.item2 {
+    background-color: blue;
 }
 
-.sidebar {
-    grid-area: sidebar;
-    background-color: rgb(195, 0, 255);
+.item3 {
+    background-color: lightcoral;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: brown;
+.item4 {
+    background-color: darkcyan;
+}
+.item5 {
+    background-color: lightgreen;
 }
